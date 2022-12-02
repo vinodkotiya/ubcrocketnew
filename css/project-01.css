@@ -1,0 +1,75 @@
+
+/* ==============================================
+	PROJECT 01 STYLES
+============================================== */
+
+	/* Home mask */
+	.home.project1{ position: relative !important; }
+	.home.project1:before{ content:''; position: absolute; width: 100%; left: 0; top: 0; height: 100%; display: block; background: url(../images/mask.svg) center center no-repeat; background-size: cover; z-index: 2; }
+	/* Home Inner and texts */
+	.home.project1 .home-inner{ position: relative; z-index: 3; }
+	.home.project1 .home-inner .colored-strip{ width: 160px; height: 1px; }
+	.home.project1 .home-inner .home-title{ font-size: 52px; color: #FFFFFF; line-height: normal; }
+	.home.project1 .home-inner .home-desc{ font-size: 36px; color: #FFFFFF; letter-spacing: -0.8px; line-height: normal; }
+	/* Button styles */
+	.project1-btn{ display: inline-block; padding: 7px 45px 6px; background: rgba(255,255,255,0.09); text-transform: uppercase; color: #FFFFFF; font-size: 12px; margin-top: 18px; font-weight: 600; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+	.project1-btn:hover,.project1-btn:focus{ color: white; }
+	/* Responsive home elements */
+		@media only screen and (max-width: 992px){
+			.home.project1 .home-inner .colored-strip{ width: 110px; }
+			.home.project1 .home-inner .home-title{ font-size: 36px; }
+			.home.project1 .home-inner .home-desc{ font-size: 25px; }
+			.project1-btn{ margin-top: 14px; }
+		}
+		@media only screen and (max-width: 640px){
+			.home.project1 .home-inner .colored-strip{ width: 90px; }
+			.home.project1 .home-inner .home-title{ font-size: 32px; }
+			.home.project1 .home-inner .home-desc{ font-size: 21px; }
+			.project1-btn{ margin-top: 9px; }
+		}
+	/* Play&Pause Button */
+	.play-button{ position: absolute; left:30px; bottom: 30px; z-index: 15; }
+
+/* ==============================================
+	PROJECT TITLE AND SUBTITLES
+============================================== */
+	
+	.project1-subtitle{ font-size: 14px; letter-spacing: -0.44px; }
+	.project1-title{ color: #fff; letter-spacing: -1px; }
+
+/* ==============================================
+	ABOUT PAGE
+============================================== */
+
+	section.about .section-inner{ padding-bottom: 120px; }
+
+
+/* ==============================================
+	IMAGES SECTION
+============================================== */
+
+	section.images-section{ border-bottom: 1px solid #e6e6e6; }
+
+/* ==============================================
+	DETAILS SECTION
+============================================== */
+
+	/* Left Area styles */
+	.details-section .section-inner{ padding-top: 90px; }
+	.details-section .section-inner .column{ margin-top: 30px; }
+	.details-section { font-size: 16px; color: #505050; line-height: 25px; margin-top: 15px; font-weight: 400; }
+	.details-section .detail-title{ font-size: 16px; color: #505050; line-height: 25px; margin-top: 15px; font-weight: 600; }
+	.details-section .detail-desc{ font-size: 14px; color: #949494; line-height: 18px; }
+	.details-section a.detail-desc:hover{ text-decoration: underline; }
+	/* Center project details */
+	.details-section .project-desc{ font-size: 14px; color: #949494; line-height: 27px; margin-top: 15px; }
+	/* Right list */
+	.details-section .project-list li{ font-size: 14px; color: #949494; line-height: 27px; margin-top: 15px; }
+	.details-section .project-list li i{ font-size: 11px; color: #949494; margin-top: -2px; display: inline-block; }
+
+/* ==============================================
+	DETAILS SECTION
+============================================== */
+
+	.project-boxes{ border-top: 1px solid #e6e6e6; }
+	.project-boxes .section-inner{ padding-top: 80px; padding-bottom: 80px; }

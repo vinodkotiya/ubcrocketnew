@@ -1,0 +1,69 @@
+
+/* ==============================================
+	ZEPLIN ELEMENTS
+	You can copy element styles to style.css file
+============================================== */
+
+	
+/* ==============================================
+	ACCORDIONS
+============================================== */
+
+	.accordions .card{ margin-bottom: 10px; border-radius: 0px; }
+	.accordions .card .card-header{ background-color: #fff; color: #333; cursor: pointer; -ms-flex-pack: justify; justify-content: space-between; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+	.accordions .card .card-header i{ font-size: 12px; margin-right: 6px; }
+	.accordions .card .card-header.collapsed{ border-bottom-color: transparent; }
+	.accordions .card .card-header span{ font-size: 12px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	.accordions .card .card-header.collapsed span{ -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+	.accordions .card .card-header:hover{ background-color: #eee; }
+
+/* ==============================================
+	TABS
+============================================== */
+
+	.modern-tabs li a{ color: #333; border: 1px solid #ddd; display: block; padding: 5px 32px; margin-bottom: 10px; margin-right: 10px; border-radius: 50px; font-size: 11px; font-weight: 600; text-transform: uppercase; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+	.modern-tabs li a i{ font-size: 10px; margin-right: 4px; }
+	.modern-tabs li a.active{ background-color: #eee; }
+	.modern-tabs li a:not(.active):hover{ background-color: #fafafa; }
+	/* Tab Content Effect */
+	.tab-content.slide-effect{ line-height: 27px; position: relative; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+	.tab-content.slide-effect .tab-pane{ display: block; }
+	.tab-content.slide-effect .tab-pane .tab-container{ width: 100%; transition-delay: 3s; position: absolute; opacity: 0; top:0; overflow: hidden; }
+	.tab-content.slide-effect .tab-pane:not(.active) .tab-container{ max-height: 100%; pointer-events: none; animation:tabPaneChangeEffectBack .6s ease forwards; -webkit-animation:tabPaneChangeEffectBack .6s ease forwards; backface-visibility: hidden; }
+	.tab-content.slide-effect .tab-pane.active .tab-container{ position: relative; opacity: 1; animation: tabPaneChangeEffect .6s ease forwards; -webkit-animation: tabPaneChangeEffect .6s ease forwards; }
+
+/* ==============================================
+	DIVIDERS
+============================================== */
+
+	.divider{ text-align: center; position: relative; display: block; overflow: hidden; width: 100%; font-size: 10px; letter-spacing: .3px; text-transform: uppercase; font-weight: 700; margin: 50px 0 30px; }
+	.divider>span{ display: inline-block; position: relative; }
+	.divider>span:before,.divider>span:after{ background-color:#ddd; content:''; display: block; width: 9999px; left:100%; margin-left:30px; top:50%; margin-top:-0.5px; height: 1px; position: absolute; }
+	.divider>span:after{ left:auto; right: 100%; margin-left:0; margin-right:30px; }
+
+/* ==============================================
+	CUSTOM SLIDER
+============================================== */
+	/* Slider for custom media */
+	.custom-slider{ position: relative; width: 100%; height: auto; opacity: 1 !important; overflow: hidden; }
+	.custom-slider .swiper-slide:active{ cursor: -webkit-grabbing; cursor: grabbing; }
+	.custom-slider .swiper-slide img{ width: 100%; height: auto; }
+	.custom-slider-arrows{ position: absolute; width: 100%; height: 120px; left: 0; top: 50%; margin-top: -60px; z-index: 2; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; pointer-events: none; }
+	.custom-slider-arrows>div{ width: 90px; height: 120px; background: transparent; line-height: 120px; text-align: center; cursor: pointer; opacity: 0; pointer-events: all; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); backface-visibility: hidden; -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); -webkit-transition: all 0.7s; -moz-transition: all 0.7s; transition: all 0.7s; }
+	.custom-slider-arrows>div svg{ fill: none; stroke: rgba(255,255,255,0.76); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); backface-visibility: hidden; }
+	.custom-slider-arrows>div svg circle{ stroke-dasharray: 0 500; stroke-dashoffset: -180; -webkit-transition: all .8s; -moz-transition: all .8s; transition: all .8s; }
+	/* Slider Arrow Hovers */
+	.custom-slider:hover .custom-slider-arrows>div{ opacity: 1; -ms-transform: scale(0.85); -webkit-transform: scale(0.85); transform: scale(0.85); }
+	.custom-slider .custom-slider-arrows>div:hover{ -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+	.custom-slider .custom-slider-arrows>div:active{ -ms-transform: scale(0.9); -webkit-transform: scale(0.9); transform: scale(0.9); }
+	.custom-slider .custom-slider-arrows>div:hover svg circle{ stroke-dasharray: 600; stroke-dashoffset: 10; }
+	/* Slider Bullets */
+	.custom-slider-pagination{ position: absolute; left: 0; z-index: 100; bottom: 35px; text-align: center; opacity: 0; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
+	.custom-slider:hover .custom-slider-pagination{ opacity: 1; bottom: 20px; }
+	.swiper-pagination-bullet{ width: 13px; height: 13px; position: relative; margin:0px 2.5px !important; background: rgba(205,205,205,0.52); opacity: 1; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; -ms-transform: scale(0.6); -webkit-transform: scale(0.6); transform: scale(0.6); }
+	.swiper-pagination-bullet.swiper-pagination-bullet-active{ -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+	/* Slider Overflows for types */
+	.custom-slider.cube,.custom-slider.flip{ overflow: visible; }
+
+
+

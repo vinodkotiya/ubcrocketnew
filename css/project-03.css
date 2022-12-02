@@ -1,0 +1,53 @@
+
+/* ==============================================
+	ABOUT PAGE
+============================================== */
+
+	section.about .section-inner{ padding-bottom: 120px; }
+
+
+/* ==============================================
+	IMAGES SECTION
+============================================== */
+
+	section.images-section{ border-bottom: 1px solid #e6e6e6; }
+
+	/* Slider in post media */
+	.images-section.project3 .image-slider{ position: relative; overflow: hidden; }
+	.images-section.project3 .image-slider img{ display: block; max-width: 100%; }
+	.images-section.project3 .image-slider-arrows{ position: absolute; width: 100%; height: 60px; left: 0; top: 50%; margin-top: -30px; z-index: 2; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; pointer-events: none; }
+	.images-section.project3 .image-slider-arrows>div{ width: 30px; height: 60px; background: #505050; color: white; line-height: 60px; text-align: center; cursor: pointer; opacity: 0; pointer-events: auto; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s; }
+	/* Slider Bullets */
+	.images-section.project3 .image-slider-pagination{ position: absolute; left: 0; z-index: 100; bottom: 20px; text-align: center; opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s; }
+	.images-section.project3 .swiper-pagination-bullet{ width: 12px; margin:0px 4px !important; height: 12px; background-color: #888888; opacity: 1; }
+	.images-section.project3 .image-slider:hover .image-slider-pagination,
+	.images-section.project3 .image-slider:hover .image-slider-arrows>div{ opacity: 1; }
+
+	/* Left Area styles */
+	.details.project3 .column{ margin-top: 30px; font-weight: 400; }
+	.details.project3 { font-size: 16px; color: #505050; line-height: 25px; margin-top: 15px; font-weight: 600; }
+	.details.project3 .detail-title{ font-size: 16px; color: #505050; line-height: 25px; margin-top: 15px; font-weight: 600; }
+	.details.project3 .detail-desc{ font-size: 14px; color: #949494; line-height: 18px; }
+	.details.project3 a.detail-desc:hover{ text-decoration: underline; }
+	/* Center project details */
+	.details.project3 .project-desc{ font-size: 14px; color: #949494; line-height: 27px; margin-top: 15px; }
+	/* Right list */
+	.details.project3 .project-list li{ font-size: 14px; color: #949494; line-height: 27px; margin-top: 15px; }
+	.details.project3 .project-list li i{ font-size: 11px; color: #949494; margin-top: -2px; display: inline-block; }
+
+/* ==============================================
+	DETAILS SECTION
+============================================== */
+
+	.project-boxes .section-inner{ padding-top: 80px; padding-bottom: 80px; }
+
+/* ==============================================
+	BOTTOM HERO SECTION
+============================================== */
+
+	.bottom-hero .bottom-hero-title{ font-size: 22px; color: #FFFFFF; letter-spacing: 15px; left: 15px; font-weight: 300; margin-top: 14px; position: relative; }
+
+
+
+
+
